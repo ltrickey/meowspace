@@ -1,0 +1,50 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Fascinate+Inline');
+
+/* Set size for whole document */
+body {
+  font-size: 14pt;
+  margin: 0px 30px;
+  border: 3px black solid;
+}
+
+/* create header bar with border */
+header {
+  border-bottom: 3px black solid;
+  padding: 0;
+}
+
+/*Size MeowSpace title and move*/
+header h2 {
+  font-family: 'Fascinate Inline', cursive;
+  font-size: 2.5em;
+  display: inline-block;
+  position: relative;
+  margin: 10px;
+}
+
+nav {
+  display: inline-block;
+}
+
+/*Remove Underline to header link*/
+header h2 a, header li a {
+  text-decoration: none;
+  margin: 20px 10px;
+}
+
+header ul {
+  /*Respect padding but sit to the right of header h2*/
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+  position: absolute;
+  top: 3%;
+  right: 5%;
+
+  /*left: 100%;*/
+}
+
+header li {
+  display: inline-block;
+}
