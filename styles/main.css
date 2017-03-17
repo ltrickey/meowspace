@@ -2,17 +2,37 @@
 @import url('https://fonts.googleapis.com/css?family=Londrina+Solid');
 @import url('https://fonts.googleapis.com/css?family=Londrina+Outline');
 
+
 /* Set size for whole document */
 body {
   font-size: 18pt;
-  margin: 0px 75px;
-  border: 3px #484655 solid;
+  margin: 0px 8%;
+  border-bottom: 3px #484655 solid;
+  border-right: 3px #484655 solid;
+  border-left: 3px #484655 solid;
+}
+
+/*setting fonts up*/
+h1, h2 {
+  font-family: 'Londrina Outline', cursive;
+  color: #484655;
+}
+
+p, h3, a {
+  font-family: 'Londrina Solid', cursive;
+  color: #484655;
 }
 
 /* create header bar with border */
 header {
-  border-bottom: 3px #484655 solid;
+  border: 3px #484655 solid;
   padding: 0;
+  position: fixed;
+  left: 8%;
+  top: 0;
+  width: 83.45%;
+  background-color: white;
+  z-index: 2;
 }
 
 /*Size MeowSpace title and move*/
@@ -56,12 +76,12 @@ header li {
   height: 400px;
   font-size: 2em;
   text-align: center;
-  /*color: white;*/
   border-bottom: 3px #484655 solid;
   background-color: grey;
   background-image: url("https://newevolutiondesigns.com/images/freebies/cat-wallpaper-8.jpg");
   background-position: right;
   background-size: 100% auto;
+  margin-top: 70px;
 }
 
 .big-meow h1 {
@@ -69,17 +89,6 @@ header li {
   margin: 0;
   padding-top: 225px;
   padding-right: 510px;
-}
-
-/*setting fonts up*/
-h1, h2 {
-  font-family: 'Londrina Outline', cursive;
-  color: #484655;
-}
-
-p, h3, a {
-  font-family: 'Londrina Solid', cursive;
-  color: #484655;
 }
 
 a:visited {
@@ -90,12 +99,14 @@ a:visited {
 /*Affecting containing element of top articles*/
 section.posts{
   position: relative;
+  z-index: 1;
 }
 
 section.posts h2 {
   font-size: 2.75em;
   margin: 40px;
   text-align: center;
+  z-index: 1;
 }
 
 section.posts h3 {
@@ -104,6 +115,7 @@ section.posts h3 {
   border-bottom: 3px #484655 solid;
   padding-bottom: 5px;
   margin-top: 10px;
+  z-index: 1;
 }
 
 .posts article {
@@ -117,10 +129,16 @@ section.posts h3 {
   padding: 10px;
   text-align: left;
   background-color: #C8DFE7;
+  z-index: 1;
 }
 
 .posts article:hover {
-  border: 15px #484655 solid;
+  border: 10px #484655 solid;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.posts article a:hover{
+  color: white;
 }
 
 /*Separating and organizing the top posts*/
@@ -168,7 +186,7 @@ section.club p {
   clear: both;
 }
 
-/*Everybody wants to be a cat*/
+/*Everybody wants to be a cat section*/
 section.be-cat {
   clear: both;
   font-size: 3.5em;
@@ -187,10 +205,8 @@ section.be-cat h2 {
 }
 
 /*Adjusting the look of the footer section*/
-
 footer {
   height: 110px;
-  /*GOOD GREY COLOR: background-color: #484655;*/
 }
 
 footer h4, footer p{
